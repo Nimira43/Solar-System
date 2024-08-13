@@ -24,5 +24,6 @@ const canvas = document.querySelector('canvas.threejs')
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas
 })
+renderer.setSize(window.innerWidth, window.innerHeight)
 renderer.render(scene, camera)
  
