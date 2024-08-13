@@ -10,7 +10,6 @@ const cubeMesh = new THREE.Mesh(
   cubeGeometry,
   cubeMaterial
 )
-
 scene.add(cubeMesh)
 
 const camera = new THREE.PerspectiveCamera(
@@ -19,5 +18,11 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   30
 )
+camera.position.z = 5
 
+const canvas = document.querySelector('canvas.threejs')
+const renderer = new THREE.WebGLRenderer({
+  canvas: canvas
+})
+renderer.render(scene, camera)
  
