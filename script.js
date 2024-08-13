@@ -11,6 +11,6 @@ const cubeMesh = new THREE.Mesh(
   cubeMaterial
 )
 
-console.log(cubeMesh)
+scene.add(cubeMesh)
 console.log(scene)
  
